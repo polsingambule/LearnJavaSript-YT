@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>nextSibling-previousSibling</title> 
+  </head>
+  <style>
+    body {
+      margin: 0px 5rem;
+      padding: 0px;
+  }
+    div#outeDiv {
+      background: #3a1212;
+      padding: 5rem;
+  }
+  div#innerDiv {
+      background:#d97183;
+      padding: 3rem;
+      display: flex;
+  }
+  .col {
+      background: #00ffe7;
+      padding: 1.5rem 4.2rem;
+      margin: 0px 20px;
+      border: 2px solid #000;
+      position: relative;
+  }
+  div{
+    color: #eee;
+  }
+  </style>
+  <script>
+//////////////////////////////////////////=========================== FirstChaild
+
+
+        // document.getElementById("innerDiv").nextElementSibling.style.background='red';
+
+        // var a = document.getElementById("innerDiv").nextElementSibling;
+        // console.log(a);
+
+
+//////////////////////////////////////////=========================== LastChaild
+
+          document.getElementById("innerDiv").style.background='red';
+
+          var a = document.getElementById("innerDiv").previousSibling;
+          console.log(a);
+
+  </script>
+  <body>
+      <div id="outerDiv">
+        Outer
+          <div id="innerDiv">
+            Inner
+              <div id="col-1" class="col">A</div>
+              <div id="col-2" class="col">B</div>
+              <div id="col-3 child-c" class="col">C</div>
+              <div id="col-4" class="col">D</div>
+              <div id="col-5" class="col">E</div>
+          </div>
+      </div>
+  </body>
+</html>

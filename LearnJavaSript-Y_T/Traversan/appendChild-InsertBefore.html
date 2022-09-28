@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ApeendChild-InsertBefore</title> 
+  </head>
+  <style>
+      #test{
+        background-color: yellow;
+      }
+  </style>
+  <script>
+//////////////////////////////////////////=========================== ApeendChild
+
+    // var newElement = document.createElement("p");
+
+    // var newText = document.createComment("This Is Text");
+
+    // newElement.appendChild(newText);
+
+    // console.log(newText);
+    // console.log(newElement);
+
+
+    ///////////////////////////////////////////
+
+    
+    var newElement = document.createElement("h2");
+
+    var newText = document.createTextNode("This Is Just Text");
+
+    newElement.appendChild(newText);
+
+    document.getElementById("test").appendChild(newElement);
+    console.log(newElement);
+
+
+  </script>
+  <body>
+     <h2>Hellow</h2>
+
+     <div id="test"></div>
+  </body>
+</html>

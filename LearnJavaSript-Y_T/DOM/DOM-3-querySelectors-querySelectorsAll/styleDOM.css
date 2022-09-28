@@ -1,0 +1,79 @@
+  *{
+    margin: 0px;
+    padding: 0px;
+    font-family:calibri;
+  }
+  section.main_page {
+    padding: 0px 50px;
+    background: #eee;
+}
+  header {
+    background-color: #ff5722;
+    color: #fff;
+    padding:0.9rem 0px;
+}
+h1.logo-txt {
+    font-size: 40px;
+    padding: 0px 20px;
+}
+nav ul {
+    display: flex;
+    background-color: #62222d;
+    align-items: center;
+    padding: 12px 0px;
+}
+nav ul li {
+    list-style: none;
+    font-size: 18px;
+    padding: 0px 20px;
+    color: #fff;
+}
+.bnr_hdg h1 {
+    padding: 10px 10px;
+    font-size: 30px;
+    font-weight: bold;
+}
+.col_1 img {
+    height: 12rem;
+    width: auto;
+    float: left;
+    padding-right: 18px;
+}
+.col_1 p {
+    font-size:18px;
+}
+.col_1 ul{
+   padding-top: 2rem;
+}
+.col_1 ul li{
+    list-style-type: circle;
+    margin-left: 1.2rem;
+    line-height: 28px;
+    font-size: 18px
+}
+.banner_main {
+    display: flex;
+}
+.col_2 {
+    padding: 0px 1rem;
+    background: #e32647;
+    color: #fff;
+    border-left: 3px solid #000;
+    margin-left: 25px;
+}
+.col_2 ul li {
+    list-style: none;
+    padding: 10px 0px;
+    width: 10rem;
+    font-size: 20px;
+}
+footer {
+    background: red;
+    padding: 5px 15px;
+    text-align: right;
+    color: #fff;
+}
+
+ul li:hover{
+    cursor: pointer;
+}

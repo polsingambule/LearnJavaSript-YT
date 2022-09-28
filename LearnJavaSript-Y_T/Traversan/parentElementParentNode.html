@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ParentElement-ParentNode</title> 
+  </head>
+  <style>
+    body {
+      margin: 0px 5rem;
+      padding: 0px;
+  }
+    div#outeDiv {
+      background: #3a1212;
+      padding: 5rem;
+  }
+  div#innerDiv {
+      background:#d97183;
+      padding: 3rem;
+      display: flex;
+  }
+  .col {
+      background: #00ffe7;
+      padding: 1.5rem 4.2rem;
+      margin: 0px 20px;
+      border: 2px solid #000;
+      position: relative;
+  }
+  div{
+    color: #eee;
+  }
+  </style>
+  <script>
+
+      // document.getElementById("innerDiv").parentElement.style.background='red';
+
+      // var a = document.getElementById("innerDiv").parentElement;
+      // console.log(a);
+
+/////////////////////////////////////////////////////////////
+
+      // document.getElementById("child-c").parentElement.style.background='red';
+
+      // var a = document.getElementById("child-c").parentElement;
+      // console.log(a);
+
+
+/////////////////////////////////////////////////////////////======ParentNode
+
+
+      document.getElementById("child-c").parentNode.style.background='red';
+
+      var a = document.getElementById("child-c").parentNode;
+      console.log(a);
+
+  </script>
+  <body>
+      <div id="outeDiv">
+        Outer
+          <div id="innerDiv">
+            Inner
+              <div id="col-1" class="col">A</div>
+              <div id="col-2" class="col">B</div>
+              <div id="col-3 child-c" class="col">C</div>
+              <div id="col-4" class="col">D</div>
+              <div id="col-5" class="col">E</div>
+          </div>
+      </div>
+  </body>
+</html>
